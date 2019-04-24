@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
       LICENSE
   }
   s.author          = { 'Cloud Hospitality S.L.' => 'support@cloudhospitality.com' }
-  s.source = { :git => 'https://tbpotwww@bitbucket.org/tbpotwww/ocguestfw.git', :tag => s.version.to_s }
+  s.source = { :git => 'https://github.com/PrestigeApps/OCGuestFW.git'}
   
   s.platform     = :ios, '10.0'
   s.ios.deployment_target = '10.0'
