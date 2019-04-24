@@ -17,3 +17,4 @@ FOUNDATION_EXPORT const unsigned char OCGuestFWVersionString[];
 // In this header, you should import all the public headers of your framework using statements like #import <OCGuestFW/PublicHeader.h>
 
 #import <OCGuestFW/OCGuestFWViewController.h>
+#import <SeosMobileKeysSDK/SeosMobileKeysSDK.h>
