@@ -11,10 +11,11 @@
 #import <AVKit/AVKit.h>
 #import <CoreBluetooth/CoreBluetooth.h>
 #import <CoreLocation/CoreLocation.h>
+#import <SeosMobileKeysSDK/SeosMobileKeysSDK.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface OCGuestFWViewController : UIViewController <CBCentralManagerDelegate>
+@interface OCGuestFWViewController : UIViewController <CBCentralManagerDelegate, MobileKeysManagerDelegate>
     typedef NS_ENUM(NSInteger, ViewState) {
         NO_KEY = 0,
         KEY_GENERATED_ERROR = 1,
