@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name            = 'OCGuestFW'
-  s.version         = '2.0.4'
+  s.version         = '2.0.6'
   s.summary         = 'Open readers with your iOS device'
   s.homepage        = 'http://www.cloudhospitality.com/es/'
   s.license         = {
@@ -18,24 +18,32 @@ Pod::Spec.new do |s|
       LICENSE
   }
   s.author          = { 'Cloud Hospitality S.L.' => 'support@cloudhospitality.com' }
-  s.source = { :git => 'https://github.com/PrestigeApps/OCGuestFW.git', :tag => '2.0.4'}
+  s.source = { :git => 'https://github.com/PrestigeApps/OCGuestFW.git', :tag => '2.0.6'}
   
   s.platform     = :ios, '10.0'
   s.ios.deployment_target = '10.0'
   s.ios.frameworks = 'Foundation', 'CoreTelephony', 'Security', 'CoreLocation', 'CoreBluetooth', 'CoreMotion', 'UIKit', 'SystemConfiguration', 'LocalAuthentication'
-  s.source_files = 'OCGuestFW/Classes/**/*.h'
+  s.source_files = 'OCGuestFW/Classes/**/*.m'
   
   s.module_name = 'OCGuestFW'
  
   s.requires_arc = true
   
-  s.vendored_frameworks = ['SeosMobileKeysSDK.framework', 'SaltoJustINMobile.framework']
- 
   s.dependency 'JSONModel', '~> 1.7.0'
   s.dependency 'CocoaLumberjack', '~> 3.2.1'
   s.dependency 'Mixpanel', '~> 3.3.3'
   s.dependency 'BerTlv', '~> 0.2.3'
   s.resource = 'Resources/OCGuestFW'
   s.resources = ['OCGuestFW/Assets/*.*']
+
+  s.vendored_frameworks = ['SeosMobileKeysSDK.framework', 'SaltoJustINMobile.framework']
   
+  #  s.resource_bundles = {
+  #    'PodAsset' => ['OCGuestFW/Assets/*.*']
+  #}
+  
+  # s.public_header_files = 'Pod/Classes/**/*.h'
+  # s.public_header_files  = 'OCGuestFW/Classes/**/*.h'#, 'SeosMobileKeysSDK.framework/**/*.h'
+  # s.frameworks = 'UIKit', 'MapKit'
+  # s.dependency 'AFNetworking', '~> 2.3'
 end

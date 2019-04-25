@@ -1,0 +1,6 @@
+framework module OCGuestFW {
+  umbrella header "OCGuestFW-umbrella.h"
+
+  export *
+  module * { export * }
+}
