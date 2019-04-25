@@ -1,5 +1,5 @@
 framework module OCGuestFW {
-  umbrella header "OCGuestFW-umbrella.h"
+  umbrella header "OCGuestFW.h"
 
   export *
   module * { export * }

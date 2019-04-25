@@ -36,14 +36,6 @@ Pod::Spec.new do |s|
   s.resource = 'Resources/OCGuestFW'
   s.resources = ['OCGuestFW/Assets/*.*']
 
-  s.vendored_frameworks = ['SeosMobileKeysSDK.framework', 'SaltoJustINMobile.framework']
+  s.vendored_frameworks = ['OCGuestFW.framework', 'SeosMobileKeysSDK.framework', 'SaltoJustINMobile.framework']
   
-  #  s.resource_bundles = {
-  #    'PodAsset' => ['OCGuestFW/Assets/*.*']
-  #}
-  
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.public_header_files  = 'OCGuestFW/Classes/**/*.h'#, 'SeosMobileKeysSDK.framework/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
 end
