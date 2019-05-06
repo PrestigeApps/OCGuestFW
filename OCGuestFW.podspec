@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name            = 'OCGuestFW'
-  s.version         = '2.0.9'
+  s.version         = '2.0.100'
   s.summary         = 'Open readers with your iOS device'
   s.homepage        = 'http://www.cloudhospitality.com/es/'
   s.license         = {
@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
       LICENSE
   }
   s.author          = { 'Cloud Hospitality S.L.' => 'support@cloudhospitality.com' }
-  s.source = { :git => 'https://github.com/PrestigeApps/OCGuestFW.git', :tag => '2.0.9'}
+  s.source = { :git => 'https://github.com/PrestigeApps/OCGuestFW.git', :tag => '2.0.100'}
   
   s.platform     = :ios, '10.0'
   s.ios.deployment_target = '10.0'
@@ -35,6 +35,6 @@ Pod::Spec.new do |s|
   #s.resource = 'Resources/OCGuestFW'
   #s.resources = ['OCGuestFW/Assets/*.*']
 
-  s.vendored_frameworks = ['OCGuestFW.framework', 'SeosMobileKeysSDK.framework', 'SaltoJustINMobile.framework']
+  s.vendored_frameworks = ['OCGuestFW.framework', 'SaltoJustINMobile.framework', 'SeosMobileKeysSDK.framework']
   
 end
