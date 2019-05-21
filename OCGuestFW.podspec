@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name            = 'OCGuestFW'
-  s.version         = '2.0.100'
+  s.version         = '2.2.0'
   s.summary         = 'Open readers with your iOS device'
   s.homepage        = 'http://www.cloudhospitality.com/es/'
   s.license         = {
@@ -19,7 +19,8 @@ Pod::Spec.new do |s|
   }
   s.author          = { 'Cloud Hospitality S.L.' => 'support@cloudhospitality.com' }
   s.source = { :git => 'https://github.com/PrestigeApps/OCGuestFW.git', :tag => '2.0.100'}
-  
+#  s.source = { :http => 'downloads.cloudhospitality.es/Framework/OCGuestFW.zip' }
+
   s.platform     = :ios, '10.0'
   s.ios.deployment_target = '10.0'
   s.ios.frameworks = 'Foundation', 'CoreTelephony', 'Security', 'CoreLocation', 'CoreBluetooth', 'CoreMotion', 'UIKit', 'SystemConfiguration', 'LocalAuthentication'
