@@ -137,6 +137,15 @@ typedef NS_ENUM(NSInteger, MobileKeysInfoType) {
  */
 - (void)setTimeoutConfiguration:(MobileKeysTimeoutConfiguration *)timeoutConfiguration;
 
+/**
+ * Override default usage of machine learning model.
+ * Default value is off. If enabled the Twist and Go algorithm will use a core Machine Learning model to predict
+ * user twists. The machinelearning model url need to be specified with MobileKeysOptionMachineLearningModelUrl
+ * and added to the app bundle
+ * @param enable Enable/disable usage of machinelearning model
+ */
+- (void)setSupportsMachineLeaningModel:(BOOL) enable DEPRECATED_MSG_ATTRIBUTE("Not in use");
+
 #pragma mark Seos TSM Integration calls
 
 /**

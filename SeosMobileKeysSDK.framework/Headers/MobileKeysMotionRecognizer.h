@@ -13,6 +13,14 @@
 - (void)userMadeUnlockGesture:(MobileKeysOpeningType)openingType;
 @end
 
+@protocol MotionRecognizerProtocol
+
+- (void)startTrackingRotation;
+- (void)stopTrackingRotation;
+-(void) pauseTrackingRotation;
+-(void) resumeTrackingRotation;
+- (BOOL)isTrackingRotation;
+@end
 /**
  * Implementation of the ASSA ABLOY patented Twist and Go motion. The user turns his phone in one direction
  * and then back again, simulating turning a door knob.
@@ -33,7 +41,7 @@
  * `-[MobileKeysMotionRecognizer resumeTrackingRotation]` when your use case does not mandate that the Twist and Go
  * motion pattern shouldn't be detected.
  */
-@interface MobileKeysMotionRecognizer : NSObject
+@interface MobileKeysMotionRecognizer : NSObject <MotionRecognizerProtocol>
 
 @property(weak, nonatomic) id <MobileKeysMotionRecognizerDelegate> internalDelegate DEPRECATED_MSG_ATTRIBUTE("This property will be renamed to delegate");
 @property(strong, nonatomic) dispatch_queue_t queue;
